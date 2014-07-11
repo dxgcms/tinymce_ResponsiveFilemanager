@@ -2,6 +2,26 @@ tinymce_ResponsiveFilemanager
 =============================
 THIS IS NOT A DXGCMS SOFTWARE THIS IS JUST AN EDITED VERSION.
 Developed by https://github.com/trippo/ResponsiveFilemanager/ edit by DXGCMS for Content Management Systems, easy to install and mess with.
+=============================
+TO Use with TINYMCE 4.1.x
+=============================
+Add  responsivefilemanager to the tinymce plugin list,
+Add in a setting call image_folder to set the image folder from the root of the site as in if your folder is /media/img/ just add that into the setting so it looks like
+image_folder: "media/img/" this is a tinymce setting so it should all look like,
+
+tinymce.init({
+				selector: "textarea.tinymce",theme: "modern",
+				plugins: [
+					 "advlist autolink link image lists charmap print preview hr anchor pagebreak",
+					 "searchreplace wordcount visualblocks visualchars insertdatetime media nonbreaking",
+					 "table contextmenu directionality emoticons paste textcolor responsivefilemanager"
+			   ],
+			   toolbar1: "undo redo | bold italic underline | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | styleselect",
+			   toolbar2: "| link unlink anchor | image media | forecolor backcolor  | print preview code ",
+			   image_advtab: true,
+				image_folder: "/media/img/"
+			 });
+that's all you have to do how easy was that :)
 
 *********************************************************
 ! Responsive FileManager for TinyMCE
