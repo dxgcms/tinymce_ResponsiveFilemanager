@@ -1,3 +1,4 @@
+=============================
 tinymce_ResponsiveFilemanager
 =============================
 Developed by https://github.com/trippo/ResponsiveFilemanager/ edit by DXGCMS for Content Management Systems, easy to install and mess with.
